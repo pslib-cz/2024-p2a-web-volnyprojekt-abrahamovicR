@@ -32,4 +32,5 @@ Originální design a individuální přístup
 
 
 FIGMA: https://www.figma.com/design/HTY98V1rygFubaK0PFiklI/AbrahamRichard?node-id=15-2&t=siqCUw0UrnwEepFx-1
+
 GH_PAGES: 
