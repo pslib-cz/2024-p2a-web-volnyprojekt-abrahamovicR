@@ -1,31 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap');
 
-p {
+body {
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Roboto Slab", serif;
     font-weight: 800;
+    margin: 0;
 }
 
 h1 {
     font-size: 28px;
 }
 
+.h1 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 800;
+    margin: 0.5em 0;
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+
 h2 {
-    font-size: 20px;
+    font-size: 1.7em;
+}
+
+.a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 800;
+    margin: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 @media (min-width: 540px) {
     p {
         font-size: 24px;
     }
+
     h1 {
         font-size: 38px;
     }
+
     h2 {
         font-size: 30px
     }

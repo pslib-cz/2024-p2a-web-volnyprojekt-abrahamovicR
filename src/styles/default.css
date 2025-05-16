@@ -3,4 +3,175 @@
   --primary: #00296B;
   --secondary: #FDC500;
   --white: #E2EDFF;
+  --black: #000000;
+}
+
+
+body {
+  background-color: var(--background);
+  color: var(--white);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary);
+  padding: 0.5em;
+  height: 66px;
+}
+
+.header__h1 {
+  position: absolute;
+  left: -1000px;
+}
+
+.icons {
+  display: flex;
+  gap: 1em;
+  padding: 0.5em;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main {
+  margin: 1em;
+  max-width: 100%;
+}
+
+.swiper {
+  max-width: 1300px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  object-fit: cover;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  color: var(--black);
+  font-weight: 900;
+}
+
+.swiper-text {
+  position: absolute;
+  background-color: var(--black);
+  color: var(--secondary);
+  opacity: 0.6;
+  bottom: 0;
+  left: 0;
+  padding: 0.5em;
+}
+
+.news {
+  margin-top: 1em;
+}
+
+.news img {
+  display: block;
+  object-fit: cover;
+  max-height: 300px;
+  width: 100%;
+}
+
+.news__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary);
+}
+
+.news__footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cart-shopping::before {
+  content: "\f07a";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+.footer {
+  background-color: var(--primary);
+}
+
+.footer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em ;
+}
+
+.footer__header-content {
+  display: flex;
+  gap: 1em;
+}
+
+.footer__icons {
+  font-size: 40px;
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+
+
+@media (min-width: 1400px) {
+
+  .hamburger-nav ul li:nth-child(2) {
+    border-right: solid 3px var(--secondary);
+    border-left: solid 3px var(--secondary);
+  }
+
+
+}
+
+@media (max-width: 1400px) {
+
+
+
+  .hamburger-content {
+    border-bottom: solid 3px var(--secondary);
+  }
+
+  .hamburger-content:first-child {
+    border-top: solid 3px var(--secondary);
+  }
+
+  .hamburger-nav li {
+    padding: 0.5em;
+  }
+
+}
+
+.fa-cart-shopping {
+  font-size: 43px;
+}
+
+.shopping-cart {
+  order: 1;
+}
+
+.header-hamburger {
+  color: var(--white);
+  text-decoration: none;
 }

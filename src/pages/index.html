@@ -1,16 +1,136 @@
 <!doctype html>
 <html lang="cs">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/scripts/main.js"></script>
-    <h1>Pánské šperky</h1>
-    <h2>Dámské</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, illum? Dignissimos sit reiciendis dolorem accusantium laborum, ratione et asperiores minus explicabo temporibus tempore expedita aliquid vitae! Voluptatum blanditiis beatae nulla.</p>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <img src="/img/logo.svg" alt="">
+      <h1 class="header__h1">RiverbedGold</h1>
+      <div class="icons">
+        <div class="shopping-cart"><a class="fa-solid fa-cart-shopping"></a></div>
+
+        <div class="hamburger-row">
+          <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <nav class="hamburger-nav hamburger-zone">
+          <ul>
+            <li class="hamburger-content">
+              <a href="" class="header-hamburger h2">Dámské Šperky</a>
+            </li>
+            <li class="hamburger-content">
+              <a href="" class="header-hamburger h2">Pánské Šperky</a>
+            </li>
+            <li class="hamburger-content">
+              <a href="" class="header-hamburger h2">Šperky na míru</a>
+            </li>
+          </ul>
+        </nav>
+
+
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="/img/cerveny.jpg" alt="">
+          <span class="swiper-text h2">Dámské Šperky</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="/img/kostky.jpg" alt="">
+          <span class="swiper-text h2">Pánské Šperky</span>
+        </div>
+        <div class="swiper-slide">
+          <img src="/img/chain.jpg" alt="">
+          <span class="swiper-text h2">Šperky na Míru</span>
+        </div>
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <section>
+      <p class="h1">O nás</p>
+      <p>RiverbedGold je moderní zlatnictví zaměřené na originální šperky a zakázkovou výrobu. Nabízíme prsteny, náramky
+        i řetízky ze stříbra a zlata, přičemž dbáme na kvalitu, precizní zpracování a individuální přístup.</p>
+      <p>Specializujeme se i na pánské šperky, které mají na trhu menší zastoupení. Věříme, že každý zákazník si
+        zaslouží něco jedinečného – proto umožňujeme výrobu na míru podle vašich představ. Společně doladíme návrh,
+        který vám bude opravdu sedět.</p>
+      <p>Pokud hledáte stylový doplněk nebo osobní dárek, RiverbedGold je tu pro vás.</p>
+    </section>
+
+    <section>
+      <p class="h1">Novinky</p>
+      <div class="news">
+        <img src="/img/kostky.jpg" alt="">
+        <div class="news__footer">
+          <div class="news__footer-content">
+            <p class="h2">Zlatý prsten</p>
+            <p class="h2">99 999,-</p>
+          </div>
+          <span class="cart-shopping h2">Do košíku</span>
+        </div>
+      </div>
+      <div class="news">
+        <img src="/img/kostky.jpg" alt="">
+        <div class="news__footer">
+          <div class="news__footer-content">
+            <p class="h2">Zlatý prsten</p>
+            <p class="h2">99 999,-</p>
+          </div>
+          <span class="cart-shopping h2">Do košíku</span>
+        </div>
+      </div>
+      <div class="news">
+        <img src="/img/kostky.jpg" alt="">
+        <div class="news__footer">
+          <div class="news__footer-content">
+            <p class="h2">Zlatý prsten</p>
+            <p class="h2">99 999,-</p>
+          </div>
+          <span class="cart-shopping h2">Do košíku</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__header">
+      <img src="img/logo.svg" alt="RiverbedGold">
+      <div class="footer__header-content">
+        <a class="fa-brands fa-instagram footer__icons" href=""></a>
+        <a class="fa-brands fa-tiktok footer__icons" href=""></a>
+        <a class="fa-brands fa-x-twitter footer__icons" href=""></a>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+
 </html>

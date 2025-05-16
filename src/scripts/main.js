@@ -1,25 +1,26 @@
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'swiper/css/bundle'
 import 'normalize.css'
 import '../styles/typography.css'
+import '../styles/hamburger.css'
 import '../styles/default.css'
 
-import { setupCounter } from './counter.js'
+import '../scripts/hamburger.js'
+import Swiper from 'swiper/bundle';
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
-
-setupCounter(document.querySelector('#counter'))
+document.addEventListener('DOMContentLoaded', () => {
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+});
