@@ -36,7 +36,6 @@ body {
 
 .main {
   max-width: 1300px;
-  min-height: calc(100vh - 66px);
   margin: 0 auto;
   padding: 0 1em;
 }
@@ -161,19 +160,24 @@ body {
   text-decoration: none;
 }
 
+
+.product-detail {
+  margin: 1em 0;
+}
+
 .product-detail__image {
   display: block;
   object-fit: cover;
   max-width: 100%;
   border: var(--secondary) 3px solid;
-  border-top: 0;
   padding: 0;
+  border-radius: 0.5em;
 }
 
 .product-detail__purchase {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .orders {
@@ -222,6 +226,10 @@ body {
   opacity: 0.4;
 }
 
+.button__submit {
+  align-self: end;
+}
+
 .button {
   color: var(--white);
   background-color: var(--background);
@@ -229,7 +237,7 @@ body {
   border-radius: 0.5em;
   padding: 0.5em;
   width: 200px;
-  align-self: flex-end;
+  height: 60px;
   font-size: 1.4rem;
 }
 
@@ -248,11 +256,18 @@ form .button::before {
 .cart__card {
   display: flex;
   flex-direction: column;
-  padding-top: 1em;
+  margin-top: 1em;
+  background-color: var(--primary);
+
+}
+
+.cart__card-header {
+  display: flex;
 }
 
 .cart__card img {
-  max-width: 100%;
+  width: 200px;
+  height: 200px;
   border: var(--secondary) 3px solid;
 }
 
@@ -272,7 +287,7 @@ form .button::before {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 auto;
+  align-items: center;
   bottom: 0;
   left: 0;
   right: 0;
@@ -285,17 +300,22 @@ form .button::before {
   padding-left: 1em;
 }
 
+.cart__fixed-text p {
+  margin: 0.5em;
+}
+
 .cart__fixed-text p:first-of-type {
   opacity: 0.6;
 }
 
 .cart__card-footer {
-  background-color: var(--primary);
   padding: 1em;
 }
 
 .cart__card-footer-text {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer {
@@ -350,7 +370,7 @@ form .button::before {
 .table {
   border-collapse: collapse;
   width: 100%;
-  margin: 1em auto; 
+  margin: 1em auto;
 }
 
 .table caption {
@@ -408,6 +428,7 @@ form .button::before {
   .product-detail__image {
     max-width: 50%;
   }
+
   .product-detail__content {
     display: flex;
     flex-direction: column;
