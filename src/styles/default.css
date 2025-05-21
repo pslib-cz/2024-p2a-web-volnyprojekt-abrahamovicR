@@ -248,7 +248,7 @@ form .button::before {
 .cart__card {
   display: flex;
   flex-direction: column;
-  padding: 1em 0;
+  padding-top: 1em;
 }
 
 .cart__card img {
@@ -268,11 +268,25 @@ form .button::before {
 }
 
 .cart__fixed {
-  position: fixed;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  background-color: var(--primary);
+  border-top: var(--secondary) 3px solid;
+}
+
+.cart__fixed-text {
+  padding-left: 1em;
+}
+
+.cart__fixed-text p:first-of-type {
+  opacity: 0.6;
 }
 
 .cart__card-footer {
