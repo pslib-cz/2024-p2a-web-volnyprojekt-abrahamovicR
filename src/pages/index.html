@@ -3,18 +3,16 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <link rel="icon" type="image/svg" href="/img/logo.svg" />
+  <title>RiverBedGold</title>
 </head>
 
 <body>
   <header>
     <div class="header">
-      <img src="/img/logo.svg" alt="">
-      <h1 class="header__h1">RiverbedGold</h1>
-      <div class="icons">
-        <div class="shopping-cart"><a class="fa-solid fa-cart-shopping"></a></div>
+      <a href="index.html"><img src="/img/logo.svg" alt="Logo RiverBedGold"></a>
+      <div class="header__icons">
 
         <div class="hamburger-row">
           <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
@@ -26,18 +24,18 @@
         <nav class="hamburger-nav hamburger-zone">
           <ul>
             <li class="hamburger-content">
-              <a href="" class="header-hamburger h2">Dámské Šperky</a>
+              <a href="products__female.html" class="hamburger__link h2">Dámské Šperky</a>
             </li>
             <li class="hamburger-content">
-              <a href="" class="header-hamburger h2">Pánské Šperky</a>
+              <a href="products__male.html" class="hamburger__link h2">Pánské Šperky</a>
             </li>
             <li class="hamburger-content">
-              <a href="" class="header-hamburger h2">Šperky na míru</a>
+              <a href="orders.html" class="hamburger__link h2">Šperky na míru</a>
             </li>
           </ul>
         </nav>
 
-
+        <div class="header__cart"><a class="fa-solid fa-cart-shopping" href="cart.html"></a></div>
       </div>
     </div>
   </header>
@@ -47,16 +45,16 @@
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="/img/cerveny.jpg" alt="">
-          <span class="swiper-text h2">Dámské Šperky</span>
+          <a href="products__female.html"><img src="/img/cerveny.jpg" alt=""></a>
+          <p class="swiper-text h2">Dámské Šperky</p>
         </div>
         <div class="swiper-slide">
-          <img src="/img/kostky.jpg" alt="">
-          <span class="swiper-text h2">Pánské Šperky</span>
+          <a href="products__male.html"><img src="/img/kostky.jpg" alt=""></a>
+          <p class="swiper-text h2">Pánské Šperky</p>
         </div>
         <div class="swiper-slide">
-          <img src="/img/chain.jpg" alt="">
-          <span class="swiper-text h2">Šperky na Míru</span>
+          <a href="orders.html"><img src="/img/chain.jpg" alt=""></a>
+          <p class="swiper-text h2">Šperky na Míru</p;>
         </div>
       </div>
 
@@ -64,7 +62,7 @@
       <div class="swiper-button-next"></div>
     </div>
 
-    <section>
+    <section class="about">
       <p class="h1">O nás</p>
       <p>RiverbedGold je moderní zlatnictví zaměřené na originální šperky a zakázkovou výrobu. Nabízíme prsteny, náramky
         i řetízky ze stříbra a zlata, přičemž dbáme na kvalitu, precizní zpracování a individuální přístup.</p>
@@ -74,49 +72,69 @@
       <p>Pokud hledáte stylový doplněk nebo osobní dárek, RiverbedGold je tu pro vás.</p>
     </section>
 
-    <section>
+    <section class="news-section">
       <p class="h1">Novinky</p>
-      <div class="news">
-        <img src="/img/kostky.jpg" alt="">
-        <div class="news__footer">
-          <div class="news__footer-content">
-            <p class="h2">Zlatý prsten</p>
-            <p class="h2">99 999,-</p>
+      <div class="news__grid">
+        <div class="news__card">
+          <img src="/img/kostky.jpg" alt="Stříbrný prsten ve tvaru kostek">
+          <div class="news__footer">
+            <div class="news__info">
+              <p class="h2">Stříbrný prsten ve tvaru kostek</p>
+              <p class="h2">1 699,-</p>
+            </div>
+            <a class="cart-shopping h2 a" href="cart.html">Do košíku</a>
           </div>
-          <span class="cart-shopping h2">Do košíku</span>
         </div>
-      </div>
-      <div class="news">
-        <img src="/img/kostky.jpg" alt="">
-        <div class="news__footer">
-          <div class="news__footer-content">
-            <p class="h2">Zlatý prsten</p>
-            <p class="h2">99 999,-</p>
+        <div class="news__card">
+          <img src="/img/lebka.jpg" alt="Střibrný prsten s dvěma lebkami">
+          <div class="news__footer">
+            <div class="news__info">
+              <p class="h2">Střibrný prsten s dvěma lebkami</p>
+              <p class="h2">1 299,-</p>
+            </div>
+            <a class="cart-shopping h2 a" href="cart.html">Do košíku</a>
           </div>
-          <span class="cart-shopping h2">Do košíku</span>
         </div>
-      </div>
-      <div class="news">
-        <img src="/img/kostky.jpg" alt="">
-        <div class="news__footer">
-          <div class="news__footer-content">
-            <p class="h2">Zlatý prsten</p>
-            <p class="h2">99 999,-</p>
+        <div class="news__card">
+          <img src="/img/lev.jpg" alt="Stříbrný prsten s jaguárem">
+          <div class="news__footer">
+            <div class="news__info">
+              <p class="h2">Stříbrný prsten s jaguárem</p>
+              <p class="h2">1 599,-</p>
+            </div>
+            <a class="cart-shopping h2 a" href="cart.html">Do košíku</a>
           </div>
-          <span class="cart-shopping h2">Do košíku</span>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer__header">
+    <div class="footer__top">
       <img src="img/logo.svg" alt="RiverbedGold">
-      <div class="footer__header-content">
-        <a class="fa-brands fa-instagram footer__icons" href=""></a>
-        <a class="fa-brands fa-tiktok footer__icons" href=""></a>
-        <a class="fa-brands fa-x-twitter footer__icons" href=""></a>
+      <div class="footer__socials">
+        <a class="fa-brands fa-instagram footer__icons" href="https://www.instagram.com/tylerdurdenrevival/"></a>
+        <a class="fa-brands fa-tiktok footer__icons"
+          href="https://www.tiktok.com/@internaziomale420/video/7494301974255471894"></a>
+        <a class="fa-brands fa-x-twitter footer__icons"
+          href="https://x.com/ohnepixel/status/1913609675905388962?s=46"></a>
+      </div>
     </div>
+    <div class="footer__content">
+      <div class="contacts">
+        <a class="p2">Kontakty</a>
+        <a class="p" href="mailto:riverbed@gold.cz">riverbed@gold.cz</a>
+        <a class="p" href="tel:+420111222333">+420 111 222 333</a>
+      </div>
+      <div class="adress">
+        <a class="p2">Adresa</a>
+        <a class="p" href="https://mapy.cz/s/nomogamomo">
+          <p class="p">Varšavská 747/49</p>
+          <p class="p">400 03 Ústí nad Labem</p>
+        </a>
+      </div>
+    </div>
+    <p class="copyright">Copyright © 2025 RiverBedGold</p>
   </footer>
 
 

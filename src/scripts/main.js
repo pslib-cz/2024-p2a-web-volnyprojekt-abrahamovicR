@@ -1,11 +1,11 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'swiper/css/bundle'
 import 'normalize.css'
-import '../styles/typography.css'
 import '../styles/hamburger.css'
+import '../styles/typography.css'
 import '../styles/default.css'
 
-import '../scripts/hamburger.js'
+import './hamburger.js'
 import Swiper from 'swiper/bundle';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,4 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.swiper-button-prev',
     },
   });
+  
+
 });
+
