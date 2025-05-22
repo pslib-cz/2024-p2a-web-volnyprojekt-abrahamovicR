@@ -1,4 +1,5 @@
 @import url(normalize.css);
+@import url(hamburger.css);
 @import url(typography.css);
 @import url(@fortawesome/fontawesome-free/css/all.min.css);
 
@@ -40,6 +41,7 @@ body {
 .main {
   max-width: 1300px;
   margin: 1em auto;
+  padding: 0 1em;
 }
 
 .swiper {
@@ -124,7 +126,6 @@ body {
 
 .product__card {
   border-radius: 0.5em;
-  overflow: hidden;
   border: var(--secondary) 3px solid;
   margin-top: 1em;
 }
@@ -144,12 +145,6 @@ body {
   background-color: var(--primary);
   height: 210px;
   text-align: center;
-}
-
-.product__card-footer-price {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
 }
 
 .product__card-footer-text {
@@ -194,9 +189,8 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 1.5em;
   min-width: 500px;
-  padding-bottom: 1em;
 }
 
 .form__container {
@@ -210,6 +204,7 @@ body {
   background-color: var(--background);
   left: 10px;
   top: -10px;
+  padding: 0 0.25em;
 }
 
 .form__container input,
@@ -264,10 +259,6 @@ form .button::before {
     "footer footer";
 }
 
-.cart__card-header {
-  display: flex;
-}
-
 .cart__card img {
   width: 200px;
   height: 200px;
@@ -280,6 +271,10 @@ form .button::before {
   margin-bottom: 1em;
 }
 
+.cart__card-chevron {
+  margin: 0.5em;
+}
+
 .cart__card-chevron::after {
   font-family: "Font Awesome 6 Free";
   content: "\f054";
@@ -290,7 +285,6 @@ form .button::before {
 .cart__fixed {
   position: sticky;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   bottom: 0;
@@ -315,8 +309,8 @@ form .button::before {
 
 .cart__card-footer {
   padding: 0 1em;
-  grid-area: footer;
   align-self: end;
+  grid-area: footer;
 }
 
 .cart__card-footer p {
@@ -425,7 +419,7 @@ form .button::before {
     gap: 1em;
   }
 
-  .news-section {
+  .news {
     border: var(--secondary) 3px solid;
     padding: 1em;
   }
