@@ -7,7 +7,6 @@
   --primary: #00296B;
   --secondary: #FDC500;
   --white: #E2EDFF;
-  --black: #000000;
 }
 
 
@@ -40,12 +39,7 @@ body {
 
 .main {
   max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 1em;
-}
-
-.main h1 {
-  margin-top: 1em;
+  margin: 1em auto;
 }
 
 .swiper {
@@ -53,7 +47,6 @@ body {
   max-height: 600px;
   overflow: hidden;
   border-radius: 0.5em;
-  margin-top: 1em;
 }
 
 .swiper-slide img {
@@ -65,7 +58,7 @@ body {
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  color: var(--black);
+  color: var(--white);
   font-weight: 900;
 }
 
@@ -78,8 +71,12 @@ body {
   padding: 0.5em;
 }
 
-.news-section {
-  margin-bottom: 1em;
+.about {
+  display: flex;
+}
+
+.rotating-ring {
+  display: none;
 }
 
 .news__card {
@@ -172,7 +169,7 @@ body {
 .product-detail__image {
   display: block;
   object-fit: cover;
-  max-width: 100%;
+  width: 100%;
   border: var(--secondary) 3px solid;
   padding: 0;
   border-radius: 0.5em;
@@ -279,7 +276,7 @@ form .button::before {
 }
 
 .cart__card-remove {
-  min-width: 100%;
+  width: 100%;
   margin-bottom: 1em;
 }
 
@@ -334,6 +331,13 @@ form .button::before {
   flex-direction: column;
   justify-content: space-between;
   grid-area: text;
+}
+
+.cart__card-text p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .footer {
@@ -440,11 +444,11 @@ form .button::before {
     display: flex;
     flex-direction: row;
     gap: 2em;
-    max-width: 100%;
+    width: 100%;
   }
 
   .product-detail__image {
-    max-width: 50%;
+    width: 50%;
   }
 
   .product-detail__content {
@@ -469,18 +473,32 @@ form .button::before {
     max-width: 400px;
     height: auto;
   }
-}
 
-
-
-@media (max-width: 540px) {
-  .footer__content {
-    flex-direction: column;
-    margin: 0 auto;
-    gap: 2em;
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
-  .form {
-    min-width: 100%;
+    .rotating-ring {
+      animation: spin 5s linear infinite;
+      display: block;
+      width: 250px;
+      height: 250px;
+      align-self: center;
+    }
   }
-}
+
+
+
+  @media (max-width: 540px) {
+    .footer__content {
+      flex-direction: column;
+      margin: 0 auto;
+      gap: 2em;
+    }
+
+    .form {
+      min-width: 100%;
+    }
+  }

@@ -1,11 +1,9 @@
 :root {
     --rotate-time: .15s;
     --move-time: .15s;
-    --background: #00509D;
     --primary: #00296B;
     --secondary: #FDC500;
     --white: #E2EDFF;
-    --black: #000000;
 }
 
 .hamburger {
@@ -92,15 +90,15 @@
 
 .hamburger-nav {
     background-color: var(--primary);
-    position: fixed;
-    top: calc(66px);
+    position: absolute;
+    top: 66px;
     left: 0;
     right: 0;
     text-align: center;
     z-index: 100;
 }
 
-.hamburger-nav ul {
+.hamburger-nav menu {
     margin: 0;
     padding: 0;
 }
@@ -111,12 +109,12 @@
 }
 
 
-@media screen and (min-width: 1100px) {
+@media (min-width: 1100px) {
     .hamburger-row {
         display: none;
     }
 
-    .hamburger-nav ul li:nth-child(2) {
+    .hamburger-nav menu li:nth-child(2) {
         border-right: solid 3px var(--secondary);
         border-left: solid 3px var(--secondary);
     }
@@ -127,10 +125,8 @@
         width: 100%;
     }
 
-    .hamburger-nav ul {
+    .hamburger-nav menu {
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
-
     }
 }
