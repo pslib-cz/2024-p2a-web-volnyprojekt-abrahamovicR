@@ -1,3 +1,7 @@
+@import url(normalize.css);
+@import url(typography.css);
+@import url(@fortawesome/fontawesome-free/css/all.min.css);
+
 :root {
   --background: #00509D;
   --primary: #00296B;
@@ -254,11 +258,13 @@ form .button::before {
 }
 
 .cart__card {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1em;
+  display: grid;
+  margin-top: 2em;
   background-color: var(--primary);
-
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "picture text"
+    "footer footer";
 }
 
 .cart__card-header {
@@ -269,10 +275,12 @@ form .button::before {
   width: 200px;
   height: 200px;
   border: var(--secondary) 3px solid;
+  grid-area: picture;
 }
 
 .cart__card-remove {
   min-width: 100%;
+  margin-bottom: 1em;
 }
 
 .cart__card-chevron::after {
@@ -309,13 +317,23 @@ form .button::before {
 }
 
 .cart__card-footer {
-  padding: 1em;
+  padding: 0 1em;
+  grid-area: footer;
+  align-self: end;
 }
 
-.cart__card-footer-text {
+.cart__card-footer p {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cart__card-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  grid-area: text;
 }
 
 .footer {
@@ -433,6 +451,23 @@ form .button::before {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 1099px) {
+
+
+  .cart__card {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "picture text"
+      "picture footer";
+  }
+
+  .cart__card img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
   }
 }
 
