@@ -126,6 +126,7 @@ body {
 
 .product__card {
   border-radius: 0.5em;
+  overflow: hidden;
   border: var(--secondary) 3px solid;
   margin-top: 1em;
 }

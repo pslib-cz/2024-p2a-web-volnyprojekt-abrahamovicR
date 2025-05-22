@@ -40,7 +40,7 @@
     </header>
 
     <main class="main">
-        <h1>Chcete šperk na míru?</h1>
+        <h2 class="h1">Chcete šperk na míru?</h2>
         <div class="orders">
             <section>
                 <p>Vyplňte krátký formulář a popište, jaký šperk si přejete. Stačí nám pár základních informací –
@@ -52,23 +52,23 @@
             <form class="form">
                 <div class="form__container">
                     <label for="name">Jméno a Příjmení</label>
-                    <input type="text" name="name" class="p" placeholder="Povinné" required>
+                    <input type="text" name="name" id="name" class="p" placeholder="Povinné" required>
                 </div>
                 <div class="form__container">
-                    <input type="email" name="email" class="p" placeholder="Povinné" required>
                     <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" class="p" placeholder="Povinné" required>
                 </div>
                 <div class="form__container">
-                    <input type="tel" name="phone" class="p" placeholder="Nepovinné">
                     <label for="phone">Telefon</label>
+                    <input type="tel" name="phone" id="phone" class="p" placeholder="Nepovinné">
                 </div>
                 <div class="form__container">
-                    <input type="text" name="material" class="p" placeholder="Povinné" required>
                     <label for="material">Materiál</label>
+                    <input type="text" name="material" id="material" class="p" placeholder="Povinné" required>
                 </div>
                 <div class="form__container">
-                    <textarea name="message" id="" cols="20" rows="6" class="p" placeholder="Nepovinné"></textarea>
                     <label for="message">Zpráva</label>
+                    <textarea name="message" id="message" cols="20" rows="6" class="p" placeholder="Nepovinné"></textarea>
                 </div>
                 <button type="submit" class="button p2 button__submit">Odeslat</button>
 
@@ -104,17 +104,6 @@
         </div>
         <p class="copyright">Copyright © 2025 RiverBedGold</p>
     </footer>
-
-
-
-
-
-
-
-
-
-
-    </div>
 
     <script type="module" src="/src/scripts/main.js"></script>
 </body>
