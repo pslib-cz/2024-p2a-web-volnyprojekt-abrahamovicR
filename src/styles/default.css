@@ -46,6 +46,10 @@
     align-items: center;
   }
 
+  .header__logo {
+    margin: 0;
+  }
+
   .main {
     max-width: 1300px;
     margin: 1em auto;
@@ -258,7 +262,7 @@
     background-color: var(--primary);
   }
 
-  .footer__content span, a {
+  .footer__content span, .footer__content a {
     margin-top: 1em;
   }
 
