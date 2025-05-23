@@ -235,7 +235,7 @@ body {
   padding: 0.5em;
   width: 200px;
   height: 60px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .button:hover {
@@ -481,6 +481,7 @@ form .button::before {
       width: 250px;
       height: 250px;
       align-self: center;
+      transform-origin: center;
     }
   }
 
